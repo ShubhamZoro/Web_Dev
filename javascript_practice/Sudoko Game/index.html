@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sudoko Game</title>
+    <title>Sudoku Online</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Sudoko</h1>
-    <hr>
-    <h2 id="Errors">Error: 0</h2>
+    <h1>Sudoku Online</h1>
+    <div id="controls">
+        <button id="easy" onclick="setGame('easy')">Easy</button>
+        <button id="medium" onclick="setGame('medium')">Medium</button>
+        <button id="hard" onclick="setGame('hard')">Hard</button>
+        <button id="new-game" onclick="newGame()">New Game</button>
+        <div id="timer">00:00</div>
+    </div>
+    <h2 id="errors">Errors: 0</h2>
     <div id="board"></div>
     <br>
     <div id="digits"></div>
